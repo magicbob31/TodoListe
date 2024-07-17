@@ -1,13 +1,12 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .note-card {
-    @apply bg-white rounded-lg shadow-lg;
+  @apply bg-white rounded-lg shadow-lg;
 }
 
-/* add strong inner shadow */
 .note-card::before {
-    @apply absolute inset-0 rounded-lg shadow-inner;
-    content: '';
+  @apply absolute inset-0 rounded-lg shadow-inner;
+  content: "";
 }

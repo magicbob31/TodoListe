@@ -1,7 +1,6 @@
-/* add tailwind */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 #nav-links {
   max-height: 0;
@@ -12,6 +11,10 @@
   -moz-transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out;
   -ms-transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out;
   -o-transition: max-height 0.5s ease-out, opacity 0.5s ease-in-out;
+}
+
+img {
+  height: 4rem;
 }
 
 #nav-links.show {
@@ -58,7 +61,7 @@
   transition: 0.3s;
 }
 
-.checkbox:checked~.slider {
+.checkbox:checked ~ .slider {
   background-color: var(--light);
 }
 
@@ -77,7 +80,7 @@
   transition: 0.3s;
 }
 
-.checkbox:checked~.slider::before {
+.checkbox:checked ~ .slider::before {
   -webkit-transform: translateX(50px);
   -ms-transform: translateX(50px);
   transform: translateX(50px);
@@ -86,8 +89,6 @@
   box-shadow: none;
 }
 
-/* scale down by 0.7 */
-
-  .toggle-switch {
-    transform: scale(0.7);
-  }
+.toggle-switch {
+  transform: scale(0.7);
+}
